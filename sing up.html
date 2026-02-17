@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up page</title>
-    <link rel="stylesheet" href="styel.css">
+    <link rel="stylesheet" href="css/styel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="wrap-1">
         <div class="topnav">
@@ -20,16 +22,16 @@
                     </div>
                     <div>
                         <select title="dropdown">
-                    <option>English</option>
+                            <option>English</option>
                             <option>Spanish</option>
-                </select>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <header>
-                <div class="jusify-right">
+                <div class=" row jusify-right">
                     <div class="col-3">
                         <h1><a href="">Exclusive</a></h1>
                     </div>
@@ -38,17 +40,25 @@
                             <nav>
                                 <ul class="flex">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="">About</a></li>
+                                    <li><a href="About.html">About</a></li>
                                     <li><a href="">Contact</a></li>
                                     <li><a href="singpage.html">sing up</a></li>
                                 </ul>
                             </nav>
-                            <div class="search flex">
+                            <div class="flex align-center">
+                                <button class="search" type="button" title="search"><span class="fa fa-magnifying-glass"
+                                        aria-hidden="true"></span></button>
                                 <form action="/search">
-                                    <input type="text" name="search" placeholder="What are you looking for?" />
-                                    <button type="button" title="search">
-                                        <span class="fa fa-magnifying-glass" aria-hidden="true"></span></button>&nbsp;
-                                    &nbsp;
+                                    <input type="text" name="search" placeholder="What are you looking for?" required>
+                                    <button type="button" title="search"><span class="fa fa-magnifying-glass"
+                                            aria-hidden="true"></span></button>
+                                </form>
+                                <button class="wishlist" title="wishlist"><span class="fa-regular fa-heart"
+                                        aria-hidden="true"></span></button>
+                                <button class="cart" title="cart"><span class="fa-solid fa-cart-shopping"
+                                        aria-hidden="true"></span></button>
+                                <button class="menu" title="menu"><span class="fa fa-bars"
+                                        aria-hidden="true"></span></button>
                                 </form>
                             </div>
                         </div>
@@ -59,7 +69,7 @@
     </div>
     <div class="wrap-2">
         <div class="container">
-            <div class="row justify-right align-center">
+            <div class="row justify-right align-center SignUp">
                 <div class="image col-6">
                     <img src="img/signup.svg" alt="Image" width="805" height="781" class="img-resp" />
                 </div>
@@ -156,4 +166,5 @@
             </div>
         </footer>
 </body>
+
 </html>
