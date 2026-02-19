@@ -175,6 +175,14 @@ footer form input:focus{outline: none;}
 
 
 
+/*login*/
+.login-desc{display: flex; margin: 1rem 0 2rem 0;}
+.login-acc{display: inline-block; color: #fff; background-color: #DB4444; padding: 0.7rem 0; border-radius: 5px; width: 9rem;}
+.f-pass{color: #DB4444; margin: 0.5rem 0 0 3rem; text-align: center;}
+
+
+
+
 
 @media screen and (max-width:980px){
     .col-t-1{ grid-column: span 1;}
