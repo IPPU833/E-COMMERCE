@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up page</title>
-    <link rel="stylesheet" href="css/styel.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/styel.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,14 +17,18 @@
         <div class="topnav">
             <div class="container">
                 <div class="flex justify-space-bet align-center">
+                    <div></div>
                     <div class="sale">
-                        <p> Suummer Sale For All Swim Suits And Free Express Delivery - OFF
-                            50% &nbsp;&nbsp; <a href="#">Shop Now</a></p>
+                        <p>
+                            Suummer Sale For All Swim Suits And Free Express Delivery - OFF
+                            50% &nbsp;&nbsp; <a href="#">Shop Now</a>
+                        </p>
                     </div>
                     <div>
                         <select title="dropdown">
                             <option>English</option>
                             <option>Spanish</option>
+                            <option >Germany</option>
                         </select>
                     </div>
                 </div>
@@ -31,7 +36,7 @@
         </div>
         <div class="container">
             <header>
-                <div class=" row jusify-right">
+                <div class="row jusify-right">
                     <div class="col-3">
                         <h1><a href="">Exclusive</a></h1>
                     </div>
@@ -42,24 +47,20 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="About.html">About</a></li>
                                     <li><a href="Contact.html">Contact</a></li>
-                                    <li><a href="singpage.html">sing up</a></li>
+                                    <li><a href="sing-up.html">Sign-Up</a></li>
                                 </ul>
                             </nav>
                             <div class="flex align-center">
                                 <button class="search" type="button" title="search"><span class="fa fa-magnifying-glass"
                                         aria-hidden="true"></span></button>
-                                <form action="/search">
-                                    <input type="text" name="search" placeholder="What are you looking for?" required>
-                                    <button type="button" title="search"><span class="fa fa-magnifying-glass"
+                                    <form action="/search">
+                                        <input type="text" name="search" placeholder="What are you looking for?"
+                                            required>
+                                        <button type="button" title="search"><span class="fa fa-magnifying-glass"
+                                                aria-hidden="true"></span></a>
+                                        </form>
+                                    <button type="button" class="menu" title="menu"><span class="fa fa-bars"
                                             aria-hidden="true"></span></button>
-                                </form>
-                                <button class="wishlist" title="wishlist"><span class="fa-regular fa-heart"
-                                        aria-hidden="true"></span></button>
-                                <button class="cart" title="cart"><span class="fa-solid fa-cart-shopping"
-                                        aria-hidden="true"></span></button>
-                                <button class="menu" title="menu"><span class="fa fa-bars"
-                                        aria-hidden="true"></span></button>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -69,23 +70,24 @@
     </div>
     <div class="wrap-2">
         <div class="container">
-            <div class="row justify-right align-center SignUp">
-                <div class="image col-6">
+            <div class="row  signup justify-right">
+                <div class="image col-6 hide-p">
                     <img src="img/signup.svg" alt="Image" width="805" height="781" class="img-resp" />
                 </div>
-                <div class="col-1"></div>
-                <div class="col-5 desc">
-                    <h1>Create an account</h1>
-                    <p>Enter your details below</p>
-                    <div>
-                        <ul>
-                            <li>Name</li>
-                            <li>Email or Phone Number</li>
-                            <li>Password</li>
-                        </ul>
-                        <a href="#">Create Account</a>
-                        <a href="#">Signup with google</a>
-                    </div>
+                <div class="col-1 hide-m"></div>
+                <div class="col-5 col-p-12 desc ">
+                    <h3>Create an account</h3>
+                    <p class="sign-para">Enter your details below</p>
+                        <form class="flex ">
+                            <label><input type="text" name="name" title="name" placeholder="Name"></label>
+                            <label><input type="email" name="name" title="name" placeholder="Email or Phone Number"></label>
+                            <label><input type="password" name="name" title="name" placeholder="Password"></label>
+                        </form>
+                        <div class="signup-desc text-center flex">
+                            <a href="#" class="create-acc" >Create Account</a>
+                        <p class="sign-w-g"><i class="fa-brands fa-google"></i><a href="#">Signup with google</a></p>
+                        <p>Already have account ?&nbsp; <a href="login.html">Log in</a></p>
+                        </div>
                 </div>
             </div>
         </div>
@@ -165,7 +167,7 @@
                 </div>
             </div>
         </footer>
-        </div>
+    </div>
 </body>
 
 </html>

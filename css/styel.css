@@ -117,6 +117,7 @@ h2{font: 600 36px var(--ff);}
 .pro2{background: #000; border: 3px solid #d8e709; display: block; height: 18px; width: 18px; border-radius:50%;}
 
 .new-arrival{ margin: 140px 0;}
+.new-arrival .flex{ gap:2rem}
 [class^="new-products"]{ background: #000; color: #fff; position: relative; }
 .new-products-lg{ margin-top: 60px; padding: 89px 30px 0 0; border-radius: 4px;}
 .new-products-md{margin-top: 60px; border-radius: 4px;}
@@ -148,11 +149,19 @@ footer form input:focus{outline: none;}
 .playstore,  .appstore{display: block; width: 134px; line-height: 15px; border: 1px solid #fff; border-radius: 4px; margin: 0 0 10px 10px;}
 .playstore span, .appstore span{font-size: 10px; }
 
-/* signup page */
+/* sign-up page */
 .wrap-2{border-top: 1px solid #000;}
 .SignUp{ margin: 60px 135px 140px 0;}
 .desc{display: flex;flex-direction: column;}
 .wrap-2 h1{font:500 36px var(--ff); margin:125px 0 24px; line-height: 30px;}
+
+
+/*login page*/
+.login-desc{display: flex; margin: 1rem 0 2rem 0;}
+.login-acc{display: inline-block; color: #fff; background-color: #DB4444; padding: 0.7rem 0; border-radius: 5px; width: 9rem;}
+.f-pass{color: #DB4444; margin: 0.5rem 0 0 3rem; text-align: center;}
+
+
 
 /*About*/
 .p1{
@@ -197,7 +206,7 @@ footer form input:focus{outline: none;}
     .col-t-10{ grid-column: span 10;}
     .col-t-11{ grid-column: span 11;}
     .col-t-12{ grid-column: span 12;}
-        nav ul.flex{ display: none;}
+    nav ul.flex{ display: none;}
     .menu{ display: inline-block;}
     .banner aside li:not(:last-child){ margin-bottom: 8px; }
     .banner aside li a{ line-height: 20px;}
@@ -207,9 +216,10 @@ footer form input:focus{outline: none;}
 
 @media screen and (max-width:787px){
     .col-m-6{ grid-column: span 6;}
-     .col-m-12{ grid-column: span 12;}
+    .col-m-12{ grid-column: span 12;}
     aside{ display: none;}
     .banner .slide a.shop{ left: 20px; bottom: 20px; }
+    .order-m-1{order:-1}
 }
 
 
