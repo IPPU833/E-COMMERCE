@@ -200,18 +200,6 @@ footer form input:focus{outline: none;}
 .cont{white-space: nowrap; align-self:center;}
 .cont a{display: block; margin: 1rem;}
 textarea{background: #F5F5f5; height: 10rem; width: 100%; border: none;}
-<<<<<<< HEAD
-=======
-
-
-
-/*login*/
-.login-desc{display: flex; margin: 1rem 0 2rem 0;}
-.login-acc{display: inline-block; color: #fff; background-color: #DB4444; padding: 0.7rem 0; border-radius: 5px; width: 9rem;}
-.f-pass{color: #DB4444; margin: 0.5rem 0 0 3rem; text-align: center;}
->>>>>>> 47823d9afba3748e24faed1c9640ec94899ffc84
-
-
 
 /*login*/
 .login-desc{display: flex; margin: 1rem 0 2rem 0;}
@@ -284,8 +272,4 @@ textarea{background: #F5F5f5; height: 10rem; width: 100%; border: none;}
     .order-p-1{ order:-1;}
     .contact button{margin:1rem 0 ;}
     .contact form input{ width: 100%;}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 47823d9afba3748e24faed1c9640ec94899ffc84
