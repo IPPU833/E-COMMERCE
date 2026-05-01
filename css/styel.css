@@ -218,7 +218,19 @@ textarea{background: #F5F5f5; height: 10rem; width: 100%; border: none;}
 .wishlist-info{ margin-top: 100px;}
 .wishlist-info button{padding: 10px 20px; background:none; }
 
-
+/*Checkout*/
+section.checkout{margin: 30px 50px;}
+.checkout  h2{margin-bottom:40px;}
+.checkout form .input-box.flex{width: 100%; margin: 10px 0; }
+.checkout form input{padding: 10px ;  border-radius: 5px; margin: 4px 0; background-color: #F5F5F5; border: none; }
+.checkout .check-info .flex{margin-top: 20px;}
+.checkout .Account .flex input[type="checkbox"]{margin: 0; cursor: pointer; margin-right: 10px;}
+.checkout .check-info .flex input[type="radio"] , .checkout .check-info .flex {gap: 1rem;}
+.check-info p{margin: 10px 0;}
+.line{border-bottom: solid 1px #000;}
+.checkout .cart-desc+div{margin-bottom: 0;}
+.checkout .check-info .flex.cart-detail{margin: 30px 0 40px 0; flex-flow: wrap;}
+.checkout .check-info .flex.cart-detail+button{margin-bottom: 40px;}
 
 
 @media screen and (max-width:980px){
