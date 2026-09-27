@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="css/styel.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -14,7 +13,7 @@
 
 <body>
     <div class="wrap-1">
-         <div class="topnav">
+        <div class="topnav">
             <div class="container ">
                 <div class="flex justify-space-bet align-center">
                     <div></div>
@@ -32,51 +31,84 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <header>
-                <div class=" row jusify-right">
+        <header>
+            <div class="container">
+                <div class="row jusify-right">
                     <div class="col-3">
                         <h1><a href="">Exclusive</a></h1>
                     </div>
                     <div class="col-9">
                         <div class="flex justify-space-bet align-center">
                             <nav>
-                                <ul class="flex jusify-right ">
+                                <ul class="flex nav-menu">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="About.html">About</a></li>
-                                    <li><a href="Contact.html">Contact</a></li>
-                                    <li><a href="sing-up.html">Sing-Up</a></li>
+                                    <li><a class="active" href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="sing-up.html">Sign Up</a></li>
                                 </ul>
+                                <select id="mobileMenu" title="mobileMenu">
+                                    <option selected disabled>Menu</option>
+                                </select>
                             </nav>
                             <div class="flex align-center">
-                                <button class="search" type="button" title="search"><span class="fa fa-magnifying-glass"
-                                        aria-hidden="true"></span></button>
-                                <form action="/search">
-                                    <input type="text" name="search" placeholder="What are you looking for?" required>
-                                    <button type="button" title="search"><span class="fa fa-magnifying-glass"
-                                            aria-hidden="true"></span></button>
-                                            </form>
-                                <a href="Wishlist.html" class="wishlist" title="wishlist"><span class="fa-regular fa-heart"
+                                <form action="/search" id="searchForm">
+                                    <input type="text" name="search" placeholder="What are you looking for?"
+                                        id="searchInput" required>
+                                    <a href="index.html" title="search"><span class="fa fa-magnifying-glass"
+                                            aria-hidden="true"></span></a>
+                                </form>
+                                <a href="wishlist.html" class="wishlist" title="wishlist"><span
+                                        class="fa-regular fa-heart" aria-hidden="true"></a>
+                                <a href="cart.html" class="cart" title="cart"><span class="fa-solid fa-cart-shopping"
                                         aria-hidden="true"></span></a>
-                                <button class="cart" title="cart"><span class="fa-solid fa-cart-shopping"
-                                        aria-hidden="true"></span></button>
-                                <button class="menu" title="menu"><span class="fa fa-bars"
-                                        aria-hidden="true"></span></button>
+                                <div class="accont-wrapper">
+                                    <button type="button" class="account text-center " title="account"><span
+                                            class="fa-regular fa-user"></span></button>
+                                    <div id="accountMenu" title="accountMenu">
+                                        <ul class="flex fdir-col ">
+                                            <li>
+                                                <a href="account.html" data-value="account">
+                                                    <i class="fa-regular fa-user"></i> Manage My Account
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="order.html" data-value="order ">
+                                                    <i class="fa-solid fa-bag-shopping"></i> My Order
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-value="cancel">
+                                                    <i class="fa-regular fa-circle-xmark"></i> My Cancellation
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-value="reviews">
+                                                    <i class="fa-regular fa-star"></i> My Reviews
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-value="logout">
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
     </div>
-    <div class="wrap-2">
-        <div class="container">
+    <main class="wrap-2">
+        <div class="container About-us">
             <section class="nav-section">
-                <a class="inactive" href="">Home</a>/
+                <a class="inactive" href="index.html">Home</a>/
                 <a href="">About</a>
             </section>
-            <div class="row justify-right align-center">
-                <div class="col-6 col-p-12">
+            <div class="row  align-center">
+                <div class="col-6  col-p-12">
                     <h1>Our Story</h1>
                     <p>Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active
                         presense in Bangladesh. Supported by wide range of tailored marketing, data and service
@@ -86,37 +118,37 @@
                         offers a
                         diverse assotment in categories ranging from consumer.</p>
                 </div>
-                <div class="col-6 col-p-12 ">
-                    <img src="img/about-1.png" alt="img" class="img-resp order-p-1">
+                <div class="col-6 col-p-12 order-p-1 ">
+                    <img src="img/about-1.png" alt="img" class="img-resp" loading="lazy">
                 </div>
             </div>
-            <section class="featured ">
+            <section class="featured f1 ">
                 <div class="row  align-center">
                     <div class="col-3 col-m-6 col-p-12 text-center">
-                        <a href=""><i class="fa-regular fa-house"></i></a>
+                        <a title="house" href=""><i class="fa-regular fa-house"></i></a>
                         <h3>10.5k</h3>
                         <p>Sallers active our site</p>
                     </div>
                     <div class="col-3 col-m-6 col-p-12 text-center">
-                        <a href=""> <i class="fa-solid fa-dollar-sign"></i></a>
+                        <a title="dollar" href=""> <i class="fa-solid fa-dollar-sign"></i></a>
                         <h3>33k</h3>
                         <p>Mopnthly Produduct Sale</p>
                     </div>
-                    <div class="col-3 col-p-12 text-center">
-                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    <div class="col-3 col-m-6 col-p-12 text-center">
+                        <a title="bag" href=""><i class="fa-solid fa-bag-shopping"></i></a>
                         <h3>45.5k</h3>
                         <p>Customer active in our site</p>
                     </div>
                     <div class="col-3 col-m-6 col-p-12 text-center">
-                        <a href=""><i class="fa-solid fa-sack-dollar"></i></a>
+                        <a title="sack-dollar" href=""><i class="fa-solid fa-sack-dollar"></i></a>
                         <h3>25k</h3>
                         <p>Anual gross sale in our site</p>
                     </div>
                 </div>
             </section>
-            <div class="row align-center">
-                <div class="col-4 col-p-12 profike">
-                    <img src="img/Tom.png" alt="p1" width="276" height="391">
+            <div class="row align-center profiles">
+                <div class="col-4 col-p-12 profile">
+                    <img src="img/Tom.png" alt="p1" width="326" height="392" class="img-resp">
                     <div class="text-center">
                         <h3>Tom Cruise</h3>
                         <p>Founder & Chairman</p>
@@ -128,8 +160,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-4 col-p-12 profike">
-                    <img src="img/Emma-1.png" alt="p2" width="294" height="397">
+                <div class="col-4 col-p-12 profile">
+                    <img src="img/Emma.png" alt="p2" width="326" height="392" class="img-resp">
                     <div class="text-center">
                         <h3> Emma Watson</h3>
                         <p>Managing Director</p>
@@ -141,8 +173,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-4 col-p-12 profike">
-                    <img src="img/Will Smith-1.png" alt="p3" width="362" height="392">
+                <div class="col-4 col-p-12 profile">
+                    <img src="img/smith.png" alt="p3" width="326" height="392" class="img-resp">
                     <div class="text-center">
                         <h3>Will Smith</h3>
                         <p>Product Designer</p>
@@ -154,11 +186,19 @@
                         </ul>
                     </div>
                 </div>
+                <ul class="pager flex align-center">
+                    <li><a href="" title="pager"></a></li>
+                    <li><a href="" title="pager"></a></li>
+                    <li><a class="active" href="" title="pager"></a></li>
+                    <li><a href="" title="pager"></a></li>
+                    <li><a href="" title="pager"></a></li>
+                </ul>
+
             </div>
-            <section class="featured">
+            <section class="featured f2">
                 <div class="row align-center">
                     <div class="col-4 col-p-12 text-center">
-                        <a href="" title="icons"><i class="fa-regular fa-truck "></i></a>
+                        <a href="" title="icons"><i class="fa-regular fa-truck"></i></a>
                         <h4>FREE AND FAST DELIVERY</h4>
                         <p>Free delivery for all orders over $140</p>
                     </div>
@@ -167,7 +207,7 @@
                         <h4>24/7 CUSTOMER SERVICE</h4>
                         <p>Friendly 24/7 customer support</p>
                     </div>
-                    <div class="col-4  col-p-12 text-center">
+                    <div class="col-4 col-p-12 text-center">
                         <a href="" title="icons"><i class="fa-solid fa-check"></i></a>
                         <h4>MONEY BACK GUARANTEE</h4>
                         <p>We reurn money within 30 days</p>
@@ -175,66 +215,69 @@
                 </div>
             </section>
         </div>
-    </div>
-     <footer>
+    </main>
+    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-3 col-m-6 ">
-                    <h1>Exclusive</h1>
-                    <h3>Subscribe</h3>
-                    <p><a href="">Get 10% off Your first order</a></p>
-                    <form action="/search">
-                        <input type="email" placeholder="Enter your email">
-                        <button title="paper" type="button"><span class="fa fa-paper-plane"></span></button>
-                    </form>
-                </div>
-                <div class="col-3 col-m-6">
-                    <h3>Support</h3>
-                    <address>11 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</address>
-                    <p><a href="">exclusive@gmail.com</a></p>
-                    <p><a href="">+88015-88888-9999</a></p>
-                </div>
-                <div class="col-2 col-m-4">
-                    <h3>Account</h3>
-                    <p><a href="">My Account</a></p>
-                    <p><a href="">Login / Register</a></p>
-                    <p><a href="">Cart</a></p>
-                    <p><a href="">Wishlist</a></p>
-                    <p><a href="">Shop</a></p>
-                </div>
-                <div class="col-2 col-m-4">
-                    <h3>Quick Links</h3>
-                    <p><a href="">Privacy</a></p>
-                    <p><a href="">Terms of use</a></p>
-                    <p><a href="">FAQ</a></p>
-                    <p><a href="">Contact</a></p>
-                </div>
-                <div class="col-2 col-m-4">
-                    <h3>Download App</h3>
-                    <div class="downloads">
-                        <div class="flex">
-                            <div><img src="img/Qrcode.svg" alt="qr code" width="80" height="80"></div>
-                            <div>
-                                <a href="" class="playstore"><span>Get it on</span><br> Play Store</a>
-                                <a href="" class="appstore"> <span>Download on the</span><br> App Store</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social">
-                        <ul class="flex">
-                            <li><a href="" title="brand"><span class="fa-brands fa-facebook-f"></span></a></li>
-                            <li><a href="" title="brand"><span class="fa-brands fa-twitter"></span></a></li>
-                            <li><a href="" title="brand"><span class="fa-brands fa-instagram"></span></a></li>
-                            <li><a href="" title="brand"><span class="fa-brands fa-linkedin-in"></span></a></li>
-                        </ul>
+    <div class="row">
+        <div class="col-3 col-m-6 ">
+            <h1>Exclusive</h1>
+            <h3>Subscribe</h3>
+            <p><a href="">Get 10% off Your first order</a></p>
+            <form action="/search">
+                <input type="email" placeholder="Enter your email">
+                <button title="paper" type="button"><span class="fa fa-paper-plane"></span></button>
+            </form>
+        </div>
+        <div class="col-2 col-m-6 ">
+            <h3>Support</h3>
+            <address>11 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</address>
+            <p><a href="">exclusive@gmail.com</a></p>
+            <p><a href="">+88015-88888-9999</a></p>
+        </div>
+        <div class="col-2 col-m-3 ">
+            <h3>Account</h3>
+            <p><a href="">My Account</a></p>
+            <p><a href="">Login / Register</a></p>
+            <p><a href="">Cart</a></p>
+            <p><a href="">Wishlist</a></p>
+            <p><a href="">Shop</a></p>
+        </div>
+        <div class="col-2 col-m-3 ">
+            <h3>Quick Links</h3>
+            <p><a href="">Privacy</a></p>
+            <p><a href="">Terms of use</a></p>
+            <p><a href="">FAQ</a></p>
+            <p><a href="">Contact</a></p>
+        </div>
+        <div class="col-3 col-m-6 ">
+            <h3>Download App</h3>
+            <div class="downloads">
+                <div class="flex">
+                    <img src="img/Qrcode.svg" alt="qr code" width="80" height="80" class="img-resp">
+                    <div>
+                        <a href="" class="playstore"><span>Get it on</span><br> Play Store</a>
+                        <a href="" class="appstore"> <span>Download on the</span><br> App Store</a>
                     </div>
                 </div>
             </div>
-            <div class="copy">
-                <p class="text-center">Copyright Rimel 2022. All right reserved</p>
+            <div class="social">
+                <ul class="flex">
+                    <li><a href="" title="brand"><span class="fa-brands fa-facebook-f"></span></a></li>
+                    <li><a href="" title="brand"><span class="fa-brands fa-twitter"></span></a></li>
+                    <li><a href="" title="brand"><span class="fa-brands fa-instagram"></span></a></li>
+                    <li><a href="" title="brand"><span class="fa-brands fa-linkedin-in"></span></a></li>
+                </ul>
             </div>
         </div>
+    </div>
+    <div class="copy">
+        <p class="text-center">Copyright Rimel 2022. All right reserved</p>
+    </div>
+</div>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
