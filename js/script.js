@@ -1,60 +1,62 @@
 
 
-window.addEventListener("DOMContentLoaded", () => {
-    const mobileMenu = document.querySelector("#mobileMenu");
-    const accountButton = document.querySelector(".account");
-    const accountMenu = document.querySelector("#accountMenu");
-    const cart = document.querySelector(".cart");
+window.addEventListener("DOMContentLoaded", () => { 
+    const mobileMenu = document.querySelector("#mobileMenu"); 
+    const accountButton = document.querySelector(".account"); 
+    const accountMenu = document.querySelector("#accountMenu"); 
+    const cart = document.querySelector(".cart"); 
+    
+    setupMobileMenu(mobileMenu); 
 
-    setupMobileMenu(mobileMenu);
+    document.addEventListener("click", (e) => { 
+        const clickedCart = e.target.closest(".cart"); 
+        const clickedAccount = e.target.closest(".account"); 
+        const clickedAccountMenu = e.target.closest("#accountMenu"); 
 
-    document.addEventListener("click", (e) => {
-        const clickedCart = e.target.closest(".cart");
-        const clickedAccount = e.target.closest(".account");
-        const clickedAccountMenu = e.target.closest("#accountMenu");
+        // 1. Cart Logic Fix
+        if (clickedCart) { 
+            cart.classList.toggle("active"); 
+        } else { 
+            cart.classList.remove("active"); 
+        } 
 
-        if (clickedCart) {
-            cart.classList.toggle("active");
-        } else {
-            cart.classList.remove("active");
-        }
+        // 2. Account Logic Fix
+        if (clickedAccount) { 
+            accountButton.classList.toggle("active"); 
+            accountMenu.classList.toggle("active"); 
+        } else if (!clickedAccountMenu) { 
+            // Only close if the click was completely outside both the button AND the menu
+            accountButton.classList.remove("active"); 
+            accountMenu.classList.remove("active"); 
+        } 
+    }); 
 
-        if (clickedAccount) {
-            accountButton.classList.toggle("active");
-            accountMenu.classList.toggle("active");
-        } else if (!clickedAccountMenu) {
-            accountButton.classList.remove("active");
-            accountMenu.classList.remove("active");
-        }
-    });
+    document.addEventListener("dblclick", (e) => { 
+        const product = e.target.closest(".product-sm"); 
+        if (product) { 
+            window.location.href = "item.html"; 
+        } 
+    }); 
+}); 
 
-    document.addEventListener("dblclick", (e) => {
-        const product = e.target.closest(".product-sm");
-        if (product) {
-            window.location.href = "item.html";
-        }
-    });
-});
+function setupMobileMenu(menu) { 
+    if (!menu) return; 
+    const links = document.querySelectorAll("nav a"); 
+    
+    links.forEach((link) => { 
+        const option = document.createElement("option"); 
+        option.value = link.getAttribute("href") || ""; 
+        option.textContent = link.textContent.trim(); 
+        menu.appendChild(option); 
+    }); 
 
-function setupMobileMenu(menu) {
-    if (!menu) return;
-
-    const links = document.querySelectorAll("nav a");
-    // menu.innerHTML = "";
-
-    links.forEach((link) => {
-        const option = document.createElement("option");
-        option.value = link.getAttribute("href") || "";
-        option.textContent = link.textContent.trim();
-        menu.appendChild(option);
-    });
-
-    menu.addEventListener("change", (e) => {
-        if (e.target.value) {
-            window.location.href = e.target.value;
-        }
-    });
+    menu.addEventListener("change", (e) => { 
+        if (e.target.value) { 
+            window.location.href = e.target.value; 
+        } 
+    }); 
 }
+
 
 //serch form
 const searchForm = document.querySelector("#searchForm");
